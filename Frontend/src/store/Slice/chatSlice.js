@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
 export const sendMessage = createAsyncThunk("chat/sendMessage", async(message) => {
-    const response = await fetch("http://localhost:3000/chat", 
+    const response = await fetch("https://chatbot-c43l.onrender.com/chat", 
         {
             method : "POST",
             headers: {
